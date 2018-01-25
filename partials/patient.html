@@ -1,0 +1,12 @@
+<div class="container">
+    <h3>Patient List</h3>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="patient in patients" class="patientlist">
+            <a href="#/edit-patient/{{patient.id}}">{{patient.name}}</a>
+        </li>
+    </ul>
+
+    <div>
+        <button id="addpatient" class="btn btn-primary" ng-click="newPatient()">Add Patient</button>
+    </div>
+</div>

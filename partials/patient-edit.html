@@ -1,0 +1,13 @@
+<div>
+    <h3>Edit Patient information </h3>
+    <form name="myform">
+        <div ng-include src="'partials/patient-details.html'"></div>
+        <div>
+            <button id="update" class="btn btn-primary" type="submit" ng-click="updatePatient()"
+                    ng-disabled="myform.$invalid">Update
+            </button>
+            <button id="cancel" class="btn btn-secondary" type="submit" ng-click="cancel()">Cancel</button>
+            <button id="delete" class="btn btn-secondary" type="button" ng-click="delete()" ng-disabled="myform.$invalid">Delete</button>
+        </div>
+    </form>
+</div>

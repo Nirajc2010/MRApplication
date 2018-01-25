@@ -1,0 +1,26 @@
+{
+  "patients" : [
+    {
+      "id": 1,
+      "name": "Niraj",
+      "age": 32,
+      "gender": "Male",
+      "email": "nira@g.com",
+      "height": 32,
+      "Dob": "24-04-1985",
+      "address": "Nerul"
+
+    },
+    {
+      "id": 2,
+      "name": "Niraj1",
+      "age": 31,
+      "gender": "Male",
+      "email": "nira@g.com",
+      "height": 31,
+      "Dob": "24-04-1985",
+      "address": "Nerul"
+
+    }
+  ]
+}

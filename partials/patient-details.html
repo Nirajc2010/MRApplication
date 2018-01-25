@@ -1,0 +1,58 @@
+<div>
+    <div class="form-group">
+        <label for="name" class="control-label">Name(*):</label>
+        <div class="control">
+            <input id="name" name="name" type="text" ng-model="data.name" required/>
+            <div ng-show="myform.name.$dirty && myform.name.$invalid">
+                <p ng-show="myform.name.$error.required" class="help-block">This field is required</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="age" class="control-label">Age:</label>
+        <div class="control">
+            <input id="age" name="age" type="number" ng-model="data.age"/>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="gender" class="control-label">Gender:</label>
+        <div id="gender" class="control">
+            <select ng-model="data.gender">
+                <option ng-repeat="g in genders" value="{{g}}">{{g}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <email-val></email-val>
+    </div>
+
+    <div class="form-group">
+        <label for="height" class="control-label">Height(*):</label>
+        <div class="control">
+            <input id="height" name="height" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" type="number"
+                   ng-model="data.height" required/>
+            <div ng-show="myform.height.$dirty && myform.height.$invalid">
+                <p ng-show="myform.height.$error.required" class="help-block">This field is required</p>
+                <p ng-show="myform.height.$error.pattern" class="help-block">two decimal allowed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="dob" class="control-label">Date of birth:</label>
+        <div class="control">
+            <input id="dob" type="date" ng-model="data.Dob" required/>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="address" class="control-label">Address:</label>
+        <div class="control">
+            <textarea id="address" ng-model="data.address"></textarea>
+        </div>
+    </div>
+</div>

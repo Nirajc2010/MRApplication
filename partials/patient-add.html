@@ -1,0 +1,13 @@
+<div>
+    <h3>New Patient information </h3>
+    <form name="myform">
+        <div ng-include src="'partials/patient-details.html'">
+        </div>
+        <div>
+            <button id="save" class="btn btn-primary" type="submit" ng-click="savePatient()"
+                    ng-disabled="myform.$invalid">Save
+            </button>
+            <button id="cancel" class="btn btn-secondary" type="submit" ng-click="cancel()">Cancel</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+/* app css stylesheet */
+
+body {
+  margin-left: 50px;
+}
+
+
+.patientlist {
+  margin: 10px;
+}
+button{
+  font-size: 12px !important;
+}
+
